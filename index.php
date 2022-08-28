@@ -13,7 +13,7 @@ header('Content-Type: text/html; charset=iso-8859-1');
 
 echo 'Versao Atual do PHP: ' . phpversion() . '<br>';
 
-$servername = "192.168.1.16";
+$servername = "18.228.151.157";
 $username = "root";
 $password = "123";
 $database = "Itens";
@@ -34,7 +34,7 @@ $valor_rand2 = strtoupper(substr(bin2hex(random_bytes(4)), 1));
 $host_name = gethostname();
 
 
-$query = "NSERT INTO dados (ProdutoID, NomeItem, DescricaoItem, Preco, Quantidade) VALUES ('$valor_rand1' , '$valor_rand2', '$valor_rand3', '$valor_rand4', '$valor_rand5')";
+$query = "NSERT INTO dados (ID, Nome, Preco, Quantidade) VALUES ('$valor_rand1' , '$valor_rand2', '$v>
 
 
 if ($link->query($query) === TRUE) {
@@ -46,3 +46,5 @@ if ($link->query($query) === TRUE) {
 ?>
 </body>
 </html>
+
+
